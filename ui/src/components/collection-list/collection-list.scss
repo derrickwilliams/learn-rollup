@@ -1,0 +1,56 @@
+$max-width: 600px;
+
+.collection-list {
+    max-width: $max-width;
+    max-height: calc(100vh);
+    overflow-y: scroll;
+
+    &-item, &-header, &-subheader {
+        border: dashed 1px;
+    }
+
+    &-items {
+        background-color: lightcyan;
+    }
+
+    &-item {
+        display: flex;
+        padding: 20px 0px 20px 20px;
+
+        &-label, &-value {
+            flex: 1;
+        }
+
+        &-label {
+
+        }
+
+        &-value {
+            text-align: right;
+        }
+
+        &-more {
+            text-align: center;
+            flex: .5;
+        }
+    }
+
+    &-header {
+        background-color: salmon;
+        text-align: center;
+    }
+
+    &-subheader {
+        display: flex;
+        background-color: antiquewhite;
+        padding: 20px;
+
+        &-label, &-value {
+            flex: 1
+        }
+
+        &-value {
+            text-align: right;
+        }
+    }
+}

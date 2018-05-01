@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./node_modules/angular/angular.js"></script>
+    <script src="./ui/bundle.js"></script>
+    <link rel="stylesheet" href="./ui/bundle.css" />
+</head>
+<body ng-app="learnRollup">
+    <div ng-controller="mainController as $ctrl">
+        <collection-list list-items="$ctrl.listItems" 
+            list-header="$ctrl.listHeader" 
+            list-subheader="$ctrl.listSubheader">
+        </collection-list>
+    </div>
+</body>
+</html>

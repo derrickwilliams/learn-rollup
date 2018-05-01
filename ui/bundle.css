@@ -1,0 +1,29 @@
+.collection-list {
+  max-width: 600px;
+  max-height: calc(100vh);
+  overflow-y: scroll; }
+  .collection-list-item, .collection-list-header, .collection-list-subheader {
+    border: dashed 1px; }
+  .collection-list-items {
+    background-color: lightcyan; }
+  .collection-list-item {
+    display: flex;
+    padding: 20px 0px 20px 20px; }
+    .collection-list-item-label, .collection-list-item-value {
+      flex: 1; }
+    .collection-list-item-value {
+      text-align: right; }
+    .collection-list-item-more {
+      text-align: center;
+      flex: .5; }
+  .collection-list-header {
+    background-color: salmon;
+    text-align: center; }
+  .collection-list-subheader {
+    display: flex;
+    background-color: antiquewhite;
+    padding: 20px; }
+    .collection-list-subheader-label, .collection-list-subheader-value {
+      flex: 1; }
+    .collection-list-subheader-value {
+      text-align: right; }
